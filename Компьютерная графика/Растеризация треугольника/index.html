@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf8" />
+		<title>Растеризация треугольник</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<script src="javascript.js"></script>
+	</head>
+	<script type="text/javascript"> 
+	function proverka(input) { 
+	    var value = input.value; 
+	    var rep = /[\.;":'a-zA-Zа-яА-Я]/; 
+	    if (rep.test(value)) { 
+	        value = value.replace(rep, ''); 
+	        input.value = value; 
+	    } 
+	} 
+	</script> 
+	<body>
+		<center>
+			<canvas id="canvas" width="600" height="600">
+    			<p>Ваш браузер не поддерживает Canvas</p>
+			</canvas>
+			<br>
+		</center>
+		<div id = "content">
+
+			<h3> Введите координаты треугольника </h3>
+			<br/>
+			<br/>
+			<input class = "inp" id="x1" type="text" value="30" placeholder="x1" onkeyup="return proverka(this)"/>
+			<br/> 
+			<input class = "inp" id="y1" type="text" value="30"  placeholder="y1" onkeyup="return proverka(this)" />
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<input class = "inp" id="x2" type="text" value="120" placeholder="x2" onkeyup="return proverka(this)"/>
+			<br/> 
+			<input class = "inp" id="y2" type="text" value="30" placeholder="y2" onkeyup="return proverka(this)" />
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<input class = "inp" id="x3" type="text" value="30" placeholder="x3" onkeyup="return proverka(this)"/>
+			<br/> 
+			<input class = "inp" id="y3" type="text" value="120" placeholder="y3" onkeyup="return proverka(this)" />
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<button id = "draw">Draw</button>
+		</div>
+	</body>
+
+</html>

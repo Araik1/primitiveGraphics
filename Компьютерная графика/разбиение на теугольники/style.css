@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	background-color: #e6e6e6;
+}
+
+#canvas{
+	margin-top: 30px;
+	width: 600px;
+	height: 600px;
+	border: 1px solid gray;
+	background-color: #fff;
+}
+
+#start{
+ text-decoration:none; 
+ text-align:center; 
+ padding:15px 66px; 
+ border:none; 
+ color:#ffffff; 
+ background:#0298d3; 
+ font-size: 19px;
+ position: absolute;
+ top: 50px;
+ left: 100px;
+ cursor: pointer;
+
+}
+#start:hover{
+ padding:15px 66px; 
+ border:none; 
+ color:#ffffff; 
+ background:#05b8ff; 
+
+  
+ }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf8" />
+		<title>Эллипс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<script src="javascript.js"></script>
+	</head>
+	<script type="text/javascript"> 
+	function proverka(input) { 
+	    var value = input.value; 
+	    var rep = /[-\.;":'a-zA-Zа-яА-Я]/; 
+	    if (rep.test(value)) { 
+	        value = value.replace(rep, ''); 
+	        input.value = value; 
+	    } 
+	} 
+	</script> 
+	<body>
+		<center>
+			<canvas id="canvas" width="600" height="600">
+    			<p>Ваш браузер не поддерживает Canvas</p>
+			</canvas>
+			<br>
+		</center>
+		<div id = "content">
+
+			<h3> Введите радиусы эллипса</h3>
+			<center>
+				<br/>
+				<br/>
+				<input class = "inp" id="inp1" type="text" name="rA" placeholder="радиус a" onkeyup="return proverka(this)"/>
+				<br/> 
+				<br/>
+				<input class = "inp" id="inp2" type="text" name="rB" placeholder="радиус b" onkeyup="return proverka(this)" />
+				<br/>
+				<br/>
+				<button id = "draw">draw</button>
+			</center>
+		</div>
+	</body>
+
+</html>
